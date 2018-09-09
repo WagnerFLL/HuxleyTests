@@ -1,6 +1,6 @@
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import q774.q774;
+import static org.junit.jupiter.api.Assertions.*;
 
 class Test774 {
 
@@ -9,7 +9,7 @@ class Test774 {
 
         char[][] map = new char[][]{{'o','o','o',},{'.','.','.'},{'.','.','.'}};
         char[] comands = new char[]{'C','C','D','D','B','B'};
-        Assertions.assertEquals("4\n" +
+        assertEquals("4\n" +
                         ".**\n" +
                         "..*\n" +
                         "..*\n",
@@ -25,7 +25,7 @@ class Test774 {
                 {'.', '.', '.', 'o', 'o'},
                 {'.', '.', 'o', 'o', '.'}};
         char[] comands = new char[]{'D','D','C','C','E','C','D','D','B','B'};
-        Assertions.assertEquals("4\n" +
+        assertEquals("4\n" +
                         ".....\n" +
                         "..**.\n" +
                         "...*.\n" +
@@ -41,7 +41,7 @@ class Test774 {
                 {'.','.','.'},
                 {'.','.','.'}};
         char[] comands = new char[]{'C','C','D','D','B'};
-        Assertions.assertEquals("4\n" +
+        assertEquals("4\n" +
                         "***\n" +
                         "..*\n" +
                         "...\n",
@@ -55,7 +55,7 @@ class Test774 {
                 {'.','.','.'},
                 {'.','.','.'}};
         char[] comands = new char[]{'C','C','D','D','B','E','E'};
-        Assertions.assertEquals("4\n" +
+        assertEquals("4\n" +
                         "..*\n" +
                         "***\n" +
                         "...\n",
@@ -71,7 +71,7 @@ class Test774 {
                 {'.', '.', '.', 'o', 'o'},
                 {'.', '.', 'o', 'o', '.'}};
         char[] comands = new char[]{'D','D','C','C','E','C','C'};
-        Assertions.assertEquals("2\n" +
+        assertEquals("2\n" +
                         ".*...\n" +
                         ".*...\n" +
                         ".....\n" +
@@ -80,5 +80,20 @@ class Test774 {
                 q774.run(map,5, comands));
     }
 
+    @Test
+    void errorTest() {
+        char[][] map = new char[][]{{' '}};
+        char[] comands = new char[]{};
+        assertAll(
+                () -> assertThrows(java.lang.AssertionError.class, () -> q774.run(map, -1, comands),
+                        "Erro não capturado para size negativo."),
+                () -> assertThrows(java.lang.AssertionError.class, () -> q774.run(null, 1, comands),
+                        "Erro não capturado para map null."),
+                () -> assertThrows(java.lang.AssertionError.class, () -> q774.run(new char[][]{},1, comands),
+                        "Erro não capturado para map vazio"),
+                () -> assertThrows(java.lang.AssertionError.class, () -> q774.run(map,1, null),
+                        "Erro não capturado para comands nulo")
+        );
+    }
 
 }

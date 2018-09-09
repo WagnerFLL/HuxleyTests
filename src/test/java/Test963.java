@@ -1,6 +1,9 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 public class Test963 {
 
     @Test
@@ -21,6 +24,21 @@ public class Test963 {
                                             {9,10,11,12},
                                             {13,14,15,16}};
         Assertions.assertEquals("1,00 3,00 9,00 11,00", q963.q963.run(4, 1, 3, matriz));
+    }
+
+    @Test
+    void errorTest() {
+        double[][] matriz = new double[][]{{1,2,3,4}};
+        assertAll(
+                () -> assertThrows(java.lang.AssertionError.class, () -> q963.q963.run(1, -1, 1, matriz),
+                        "Assert não detectou valor inválido!"),
+                () -> assertThrows(java.lang.AssertionError.class, () -> q963.q963.run(1, 1, -1, matriz),
+                        "Assert não detectou valor inválido!"),
+                () -> assertThrows(java.lang.AssertionError.class, () -> q963.q963.run(1,1, 1, null),
+                        "Assert não detectou valor inválido!"),
+                () -> assertThrows(java.lang.AssertionError.class, () -> q963.q963.run(1,1, 1, new double[][]{}),
+                        "Assert não detectou valor inválido!")
+        );
     }
 
 }

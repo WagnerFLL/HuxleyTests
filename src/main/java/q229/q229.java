@@ -4,6 +4,8 @@ public class q229 {
 
     public static String run(int lin, int col, int qtdV, int ger, int[][] positions) {
 
+        assert lin > 0 && col > 0 && qtdV > 0 && ger > 0 && null != positions &&positions.length > 0;
+
         StringBuilder result = new StringBuilder();
         int i, j, viva, a, b;
 

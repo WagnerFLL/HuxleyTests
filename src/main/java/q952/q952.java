@@ -3,6 +3,7 @@ package q952;
 public class q952 {
 
     public static int run(char[] linha) {
+
         int i, t = Integer.MAX_VALUE;
         int[] ascii = new int[256];
 

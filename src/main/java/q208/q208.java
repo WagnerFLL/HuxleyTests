@@ -4,6 +4,8 @@ public class q208 {
 
     public static String run(long n) {
 
+        assert n > 0;
+
         int i, aux = 0;
 
         for (i = 2; i <= Math.sqrt(n); i++) {

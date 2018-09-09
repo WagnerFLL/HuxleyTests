@@ -4,6 +4,8 @@ public class q774 {
 
     public static String run(char[][] map, int sizeM, char[] comand ){
 
+        assert map != null && map.length > 0 && sizeM > 0 && comand != null;
+
         int sizeC = comand.length;
         int pi = sizeM-1, pj = 0, food = 0, bodySize = 0;
 

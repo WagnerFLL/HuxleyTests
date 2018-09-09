@@ -1,6 +1,9 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 public class Test951 {
 
     @Test
@@ -59,6 +62,18 @@ public class Test951 {
                 {'-','-','-','-'},
                 {'-','-','-','-'}};
         Assertions.assertEquals("110",q951.q951.run(4, map));
+
+    }
+
+    @Test
+    void errorTest() {
+        char[][] map = new char[][]{{' '}};
+        assertAll(
+                () -> assertThrows(java.lang.AssertionError.class, () -> q951.q951.run(-1, map),
+                        "Assert não capturou valor negativo."),
+                () -> assertThrows(java.lang.AssertionError.class, () -> q951.q951.run(1, null),
+                        "Assert não capturou valor nulo.")
+        );
 
     }
 

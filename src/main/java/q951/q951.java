@@ -30,7 +30,7 @@ public class q951 {
     }
 
     public static String run(int nq, char[][] map) {
-
+        assert nq > 0 && map != null;
         int n = 0, exp, fi = 0, fj = 0;
 
         value = "";

@@ -4,6 +4,8 @@ public class q319 {
 
     public static int run(int n, int[][] intervals) {
 
+        assert n > 0 && null != intervals && intervals.length > 0;
+
         int elo = n - 1, k;
         int[] aux = new int[]{0,0};
 

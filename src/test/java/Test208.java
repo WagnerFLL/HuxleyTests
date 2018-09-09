@@ -1,26 +1,33 @@
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class Test208 {
 
     @Test
-    void runTest1() {
-        Assertions.assertEquals("S", q208.q208.run(634751));
+    void runTest() {
+        assertAll(
+                () -> assertEquals("S", q208.q208.run(634751), "Retorno incorreto!"),
+                () -> assertEquals("S", q208.q208.run(341233213), "Retorno incorreto!"),
+                () -> assertEquals("N", q208.q208.run(86028121), "Retorno incorreto!"),
+                () -> assertEquals("N", q208.q208.run(817504243), "Retorno incorreto!")
+        );
+
     }
 
     @Test
-    void runTest2() {
-        Assertions.assertEquals("S", q208.q208.run(341233213));
-    }
+    void errorTest() {
+        assertAll(
+                () -> assertThrows(java.lang.AssertionError.class, () -> q208.q208.run(-1),
+                        "Assert não funciona como esperado."),
+                () -> assertThrows(java.lang.AssertionError.class, () -> q208.q208.run(-10),
+                        "Assert não funciona como esperado."),
+                () -> assertThrows(java.lang.AssertionError.class, () -> q208.q208.run(-123 + 1),
+                        "Assert não funciona como esperado."),
+                () -> assertThrows(java.lang.AssertionError.class, () -> q208.q208.run(-05),
+                        "Assert não funciona como esperado.")
+        );
 
-    @Test
-    void runTest3() {
-        Assertions.assertEquals("N", q208.q208.run(86028121));
-    }
-
-    @Test
-    void runTest4() {
-        Assertions.assertEquals("N", q208.q208.run(817504243));
     }
 
 }
