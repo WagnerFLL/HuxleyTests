@@ -1,6 +1,6 @@
-package q774;
+package Level_Advanced_4;
 
-public class q774 {
+public class Problem774 {
 
     public static String run(char[][] map, int sizeM, char[] comand ){
 

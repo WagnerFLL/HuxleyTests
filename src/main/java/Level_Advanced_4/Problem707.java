@@ -1,6 +1,6 @@
-package q707;
+package Level_Advanced_4;
 
-public class q707 {
+public class Problem707 {
     public static String run(int vzs, int n, int vlr, int[] amigos) {
 
         assert n > 0 && vlr > 0 && amigos != null && amigos.length > 0;

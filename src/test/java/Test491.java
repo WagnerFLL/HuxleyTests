@@ -1,3 +1,4 @@
+import Level_Advanced_4.Problem491;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -24,8 +25,8 @@ public class Test491 {
         };
 
         assertAll(
-                () -> assertEquals("0 18 15", q491.q491.run(sequence1)),
-                () -> assertEquals("0 15 0", q491.q491.run(sequence2))
+                () -> assertEquals("0 18 15", Problem491.run(sequence1)),
+                () -> assertEquals("0 15 0", Problem491.run(sequence2))
         );
 
     }
@@ -36,11 +37,11 @@ public class Test491 {
         int[][] sequence2 = new int[][]{{1,5},{1,6},{1},{1,4},{11,5}};
 
         assertAll(
-                () -> assertThrows(java.lang.AssertionError.class, () -> q491.q491.run(sequence),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Problem491.run(sequence),
                         "Entrada aceita com tamanho incorreto."),
-                () -> assertThrows(java.lang.AssertionError.class, () -> q491.q491.run(sequence2),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Problem491.run(sequence2),
                         "Entrada aceita com tamanho incorreto."),
-                () -> assertThrows(java.lang.AssertionError.class, () -> q491.q491.run(null),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Problem491.run(null),
                         "Entrada nula aceita.")
         );
 

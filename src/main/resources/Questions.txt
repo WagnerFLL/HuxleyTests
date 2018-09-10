@@ -4,12 +4,12 @@
 4: 315 - Nomes que produzem cores
 OK                              970 - Onde estão as substrings?
 OK                              319 - Foco nas Fotografias
-7: 173 - Cadeiras do auditório
+OK                              173 - Cadeiras do auditório
 OK                              229 - Jogo da Vida
 OK                              952 - Vou Passar em P1
 OK                              892 - Tower defense
-11: 419 - Todos os subconjuntos
-12: 418 - Todas as permutações
+OK                              419 - Todos os subconjuntos
+OK                              418 - Todas as permutações
 OK                              13: 774 - Snake
 OK                              14: 963 - Submatriz
 OK                              951 - Satélite

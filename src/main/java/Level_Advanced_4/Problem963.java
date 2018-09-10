@@ -1,6 +1,6 @@
-package q963;
+package Level_Advanced_4;
 
-public class q963 {
+public class Problem963 {
 
     public static String run(int n, int p1, int p2, double[][] matriz) {
         assert p1 > 0 && p2 > 0 && matriz != null && matriz.length != 0;

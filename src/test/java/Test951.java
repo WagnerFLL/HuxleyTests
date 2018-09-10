@@ -1,3 +1,4 @@
+import Level_Advanced_4.Problem951;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -13,7 +14,7 @@ public class Test951 {
                                     {'-','-','-','-'},
                                     {'-','-','-','-'},
                                     {'-','-','-','*'}};
-        Assertions.assertEquals("440",q951.q951.run(4, map));
+        Assertions.assertEquals("440",Problem951.run(4, map));
 
     }
 
@@ -21,7 +22,7 @@ public class Test951 {
     void runTest2() {
 
         char[][] map = new char[][]{{'*'}};
-        Assertions.assertEquals("0",q951.q951.run(1, map));
+        Assertions.assertEquals("0",Problem951.run(1, map));
 
     }
 
@@ -32,7 +33,7 @@ public class Test951 {
                                     {'-','*','-','-'},
                                     {'-','-','-','-'},
                                     {'-','-','-','-'}};
-        Assertions.assertEquals("240",q951.q951.run(4, map));
+        Assertions.assertEquals("240",Problem951.run(4, map));
 
     }
 
@@ -51,7 +52,7 @@ public class Test951 {
                                     {'-','*','*','*','-','-','-','-','-','-','-','-'},
                                     {'-','-','-','-','-','*','*','*','*','*','-','-'},
                                     {'-','-','-','*','-','-','*','*','*','-','-','-'}};
-        Assertions.assertEquals("4240",q951.q951.run(12, map));
+        Assertions.assertEquals("4240",Problem951.run(12, map));
     }
 
     @Test
@@ -61,7 +62,7 @@ public class Test951 {
                 {'-','-','-','-'},
                 {'-','-','-','-'},
                 {'-','-','-','-'}};
-        Assertions.assertEquals("110",q951.q951.run(4, map));
+        Assertions.assertEquals("110",Problem951.run(4, map));
 
     }
 
@@ -69,9 +70,9 @@ public class Test951 {
     void errorTest() {
         char[][] map = new char[][]{{' '}};
         assertAll(
-                () -> assertThrows(java.lang.AssertionError.class, () -> q951.q951.run(-1, map),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Problem951.run(-1, map),
                         "Assert não capturou valor negativo."),
-                () -> assertThrows(java.lang.AssertionError.class, () -> q951.q951.run(1, null),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Problem951.run(1, null),
                         "Assert não capturou valor nulo.")
         );
 

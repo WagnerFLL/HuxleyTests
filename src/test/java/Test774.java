@@ -1,5 +1,5 @@
 import org.junit.jupiter.api.Test;
-import q774.q774;
+import Level_Advanced_4.Problem774;
 import static org.junit.jupiter.api.Assertions.*;
 
 class Test774 {
@@ -13,7 +13,7 @@ class Test774 {
                         ".**\n" +
                         "..*\n" +
                         "..*\n",
-                q774.run(map,3, comands));
+                Problem774.run(map,3, comands));
     }
 
     @Test
@@ -31,7 +31,7 @@ class Test774 {
                         "...*.\n" +
                         "...*.\n" +
                         ".....\n",
-                q774.run(map,5, comands));
+                Problem774.run(map,5, comands));
     }
 
     @Test
@@ -45,7 +45,7 @@ class Test774 {
                         "***\n" +
                         "..*\n" +
                         "...\n",
-                q774.run(map,3, comands));
+                Problem774.run(map,3, comands));
     }
 
     @Test
@@ -59,7 +59,7 @@ class Test774 {
                         "..*\n" +
                         "***\n" +
                         "...\n",
-                q774.run(map,3, comands));
+                Problem774.run(map,3, comands));
     }
 
     @Test
@@ -77,7 +77,7 @@ class Test774 {
                         ".....\n" +
                         ".....\n" +
                         ".....\n",
-                q774.run(map,5, comands));
+                Problem774.run(map,5, comands));
     }
 
     @Test
@@ -85,13 +85,13 @@ class Test774 {
         char[][] map = new char[][]{{' '}};
         char[] comands = new char[]{};
         assertAll(
-                () -> assertThrows(java.lang.AssertionError.class, () -> q774.run(map, -1, comands),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Problem774.run(map, -1, comands),
                         "Erro não capturado para size negativo."),
-                () -> assertThrows(java.lang.AssertionError.class, () -> q774.run(null, 1, comands),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Problem774.run(null, 1, comands),
                         "Erro não capturado para map null."),
-                () -> assertThrows(java.lang.AssertionError.class, () -> q774.run(new char[][]{},1, comands),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Problem774.run(new char[][]{},1, comands),
                         "Erro não capturado para map vazio"),
-                () -> assertThrows(java.lang.AssertionError.class, () -> q774.run(map,1, null),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Problem774.run(map,1, null),
                         "Erro não capturado para comands nulo")
         );
     }

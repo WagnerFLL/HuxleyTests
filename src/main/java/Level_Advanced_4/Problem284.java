@@ -1,8 +1,8 @@
-package q284;
+package Level_Advanced_4;
 
 import static java.lang.Math.sqrt;
 
-public class q284 {
+public class Problem284 {
 
     public static long run(long n) {
 

@@ -1,6 +1,6 @@
-package q892;
+package Level_Advanced_4;
 
-public class q892 {
+public class Problem892 {
 
     public static String run(int h, int c, char[][] campo) {
 

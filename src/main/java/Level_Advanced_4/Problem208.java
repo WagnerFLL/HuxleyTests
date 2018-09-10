@@ -1,6 +1,6 @@
-package q208;
+package Level_Advanced_4;
 
-public class q208 {
+public class Problem208 {
 
     public static String run(long n) {
 

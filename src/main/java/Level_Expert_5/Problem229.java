@@ -1,6 +1,6 @@
-package Level_Expert_5.q229;
+package Level_Expert_5;
 
-public class q229 {
+public class Problem229 {
 
     public static String run(int lin, int col, int qtdV, int ger, int[][] positions) {
 

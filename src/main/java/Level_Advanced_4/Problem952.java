@@ -1,6 +1,6 @@
-package q952;
+package Level_Advanced_4;
 
-public class q952 {
+public class Problem952 {
 
     public static int run(char[] linha) {
 

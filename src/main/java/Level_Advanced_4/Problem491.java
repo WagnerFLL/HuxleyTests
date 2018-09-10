@@ -1,6 +1,6 @@
-package q491;
+package Level_Advanced_4;
 
-public class q491 {
+public class Problem491 {
 
     public static String run(int[][] musics) {
 

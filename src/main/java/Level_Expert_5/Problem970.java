@@ -1,6 +1,6 @@
-package Level_Expert_5.q970;
+package Level_Expert_5;
 
-public class q970 {
+public class Problem970 {
 
     private static int inc;
     private static char[] seq;

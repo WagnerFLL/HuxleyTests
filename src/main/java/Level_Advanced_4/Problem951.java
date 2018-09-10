@@ -1,6 +1,6 @@
-package q951;
+package Level_Advanced_4;
 
-public class q951 {
+public class Problem951 {
 
     private static String value = "";
 

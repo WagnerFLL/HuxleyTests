@@ -1,6 +1,6 @@
-package Level_Expert_5.q319;
+package Level_Expert_5;
 
-public class q319 {
+public class Problem319 {
 
     public static int run(int n, int[][] intervals) {
 
