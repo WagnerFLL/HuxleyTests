@@ -8,7 +8,7 @@ class Test319 {
         int[][] intervals = new int[][]{{1, 3},
                                         {2, 5},
                                         {4, 6}};
-        assertEquals(2, q319.q319.run(3, intervals),
+        assertEquals(2, Level_Expert_5.q319.q319.run(3, intervals),
                 "Erro com intervalos contínuos");
     }
 
@@ -19,7 +19,7 @@ class Test319 {
                                         {5, 9},
                                         {6, 11},
                                         {7, 12}};
-        assertEquals(2, q319.q319.run(5, intervals),
+        assertEquals(2, Level_Expert_5.q319.q319.run(5, intervals),
                 "Erro ao entrar com intervalos sobrepostos.");
     }
 
@@ -30,7 +30,7 @@ class Test319 {
                 {5, 9},
                 {3, 7},
                 {7, 12}};
-        assertEquals(2, q319.q319.run(5, intervals),
+        assertEquals(2, Level_Expert_5.q319.q319.run(5, intervals),
                 "Erro ao entrar com intervalos desordenados.");
     }
 
@@ -40,11 +40,11 @@ class Test319 {
         int[][] test = new int[][]{};
 
         assertAll(
-                () -> assertThrows(java.lang.AssertionError.class, ()-> q319.q319.run(-1,test),
+                () -> assertThrows(java.lang.AssertionError.class, ()-> Level_Expert_5.q319.q319.run(-1,test),
                         "Assert não parou o programa com n negativo!"),
-                () -> assertThrows(java.lang.AssertionError.class, ()-> q319.q319.run(4, null),
+                () -> assertThrows(java.lang.AssertionError.class, ()-> Level_Expert_5.q319.q319.run(4, null),
                         "Assert não parou o programa com interval nulo."),
-                () -> assertThrows(java.lang.AssertionError.class, ()-> q319.q319.run(3, test),
+                () -> assertThrows(java.lang.AssertionError.class, ()-> Level_Expert_5.q319.q319.run(3, test),
                         "Assert não parou o programa com interval vazio.")
         );
     }

@@ -7,14 +7,14 @@ OK                              319 - Foco nas Fotografias
 7: 173 - Cadeiras do auditório
 OK                              229 - Jogo da Vida
 OK                              952 - Vou Passar em P1
-10: 892 - Tower defense
+OK                              892 - Tower defense
 11: 419 - Todos os subconjuntos
 12: 418 - Todas as permutações
 OK                              13: 774 - Snake
 OK                              14: 963 - Submatriz
 OK                              951 - Satélite
 OK                              208 - Selos
-17: 829 - Sequencia do Alfabeto
+OK                              829 - Sequencia do Alfabeto
 OK                              707 - Prateek e seus amigos
-19: 284 - Produto dos Digitos
-20: 491 - Playlist de Verão
+OK                              284 - Produto dos Digitos
+Ok                              491 - Playlist de Verão

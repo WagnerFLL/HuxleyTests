@@ -172,22 +172,22 @@ public class Test229 {
                 {6, 5},
                 {6, 6}};
 
-        assertEquals(expect, q229.q229.run(9, 9, 6, 15, positions), "Retorno incorreto!");
+        assertEquals(expect, Level_Expert_5.q229.q229.run(9, 9, 6, 15, positions), "Retorno incorreto!");
     }
 
     @Test
     void errorTest() {
         int[][] test = new int[][]{{0}};
         assertAll(
-                () -> assertThrows(java.lang.AssertionError.class, () -> q229.q229.run(-1, 1, 1, 1, test),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Level_Expert_5.q229.q229.run(-1, 1, 1, 1, test),
                         "Erro não detectado!"),
-                () -> assertThrows(java.lang.AssertionError.class, () -> q229.q229.run(1, -1, 1, 1, test),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Level_Expert_5.q229.q229.run(1, -1, 1, 1, test),
                         "Erro não detectado!"),
-                () -> assertThrows(java.lang.AssertionError.class, () -> q229.q229.run(1, 1, -1, 1, test),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Level_Expert_5.q229.q229.run(1, 1, -1, 1, test),
                         "Erro não detectado!"),
-                () -> assertThrows(java.lang.AssertionError.class, () -> q229.q229.run(1, 1, 1, -1, test),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Level_Expert_5.q229.q229.run(1, 1, 1, -1, test),
                         "Erro não detectado!"),
-                () -> assertThrows(java.lang.AssertionError.class, () -> q229.q229.run(1, 1, 1, 1, null),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Level_Expert_5.q229.q229.run(1, 1, 1, 1, null),
                         "Erro não detectado!")
                 );
     }
