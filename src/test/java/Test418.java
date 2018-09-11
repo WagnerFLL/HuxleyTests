@@ -1,5 +1,6 @@
 import Level_Advanced_4.Problem418;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class Test418 {
@@ -749,17 +750,17 @@ public class Test418 {
     @Test
     void errorTest() {
         assertAll(
-                () -> assertThrows(java.lang.AssertionError.class, ()-> Problem418.run(-1),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Problem418.run(-1),
                         "Número negativo aceito indevidamente."),
-                () -> assertThrows(java.lang.AssertionError.class, ()-> Problem418.run(-142131),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Problem418.run(-142131),
                         "Número negativo aceito indevidamente."),
-                () -> assertThrows(java.lang.AssertionError.class, ()-> Problem418.run(0),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Problem418.run(0),
                         "0 aceito ilegalmente."),
-                () -> assertThrows(java.lang.AssertionError.class, ()-> Problem418.run(120),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Problem418.run(120),
                         "Valor aceito ilegalmente."),
-                () -> assertThrows(java.lang.AssertionError.class, ()-> Problem418.run(12),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Problem418.run(12),
                         "Valor aceito ilegalmente."),
-                () -> assertThrows(java.lang.NumberFormatException.class, ()-> Problem418.run(Integer.parseInt(null)),
+                () -> assertThrows(java.lang.NumberFormatException.class, () -> Problem418.run(Integer.parseInt(null)),
                         "Número inválido aceito.")
         );
     }

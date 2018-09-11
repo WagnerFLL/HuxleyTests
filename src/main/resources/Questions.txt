@@ -1,7 +1,7 @@
-1: 974 - CANCELADA
-2: 86 - CANCELADA
-3: 525 - CANCELADA
-4: 315 - Nomes que produzem cores
+OK                              349 - Converta um número romano para arábico
+OK                              962 - Matriz diferente
+OK                              86 - Orndenação de DNA
+OK                              315 - Nomes que produzem cores
 OK                              970 - Onde estão as substrings?
 OK                              319 - Foco nas Fotografias
 OK                              173 - Cadeiras do auditório
@@ -10,8 +10,8 @@ OK                              952 - Vou Passar em P1
 OK                              892 - Tower defense
 OK                              419 - Todos os subconjuntos
 OK                              418 - Todas as permutações
-OK                              13: 774 - Snake
-OK                              14: 963 - Submatriz
+OK                              774 - Snake
+OK                              963 - Submatriz
 OK                              951 - Satélite
 OK                              208 - Selos
 OK                              829 - Sequencia do Alfabeto

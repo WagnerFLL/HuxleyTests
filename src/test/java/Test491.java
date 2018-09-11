@@ -34,7 +34,7 @@ public class Test491 {
     @Test
     void errorTest() {
         int[][] sequence = new int[][]{};
-        int[][] sequence2 = new int[][]{{1,5},{1,6},{1},{1,4},{11,5}};
+        int[][] sequence2 = new int[][]{{1, 5}, {1, 6}, {1}, {1, 4}, {11, 5}};
 
         assertAll(
                 () -> assertThrows(java.lang.AssertionError.class, () -> Problem491.run(sequence),

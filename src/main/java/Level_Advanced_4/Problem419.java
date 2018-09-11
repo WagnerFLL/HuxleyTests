@@ -5,11 +5,11 @@ public class Problem419 {
     private static int[] array;
     private static String value;
 
-    private static void show(int n){
+    private static void show(int n) {
         int i;
         value += "{";
-        for(i=1 ; i<n+1 ; i++){
-            if(array[i]==1){
+        for (i = 1; i < n + 1; i++) {
+            if (array[i] == 1) {
                 value += " " + i;
             }
         }
@@ -17,29 +17,29 @@ public class Problem419 {
 
     }
 
-    private static void comb(int qtd, int p){
+    private static void comb(int qtd, int p) {
         int i;
-        if(p==qtd){
+        if (p == qtd) {
             show(qtd);
-        }else{
+        } else {
             p++;
 
-            for(i=1 ; i>=0 ; i--){
-                array[p]=i;
-                comb(qtd,p);
+            for (i = 1; i >= 0; i--) {
+                array[p] = i;
+                comb(qtd, p);
             }
         }
     }
 
-    public static String run(int n){
+    public static String run(int n) {
 
         assert n > 0 && n < 16;
 
         value = "";
 
-        array = new int[n+1];
+        array = new int[n + 1];
 
-        comb(n,0);
+        comb(n, 0);
 
         return value;
     }

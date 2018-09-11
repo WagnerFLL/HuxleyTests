@@ -5,7 +5,7 @@ public class Problem491 {
     public static String run(int[][] musics) {
 
         assert musics != null && musics.length == 5;
-        for (int [] a: musics) {
+        for (int[] a : musics) {
             assert a.length == 2;
         }
 

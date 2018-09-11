@@ -28,15 +28,15 @@ class Test952 {
     @Test
     void runTest4() {
         String frase = "VvVvvvvvVVVVVVVVVVVvvvvvvccvvVVVv" +
-                        "OooooooooooooooOoooOOoOOOO" +
-                        "UuuuUUUuUUUUuUUUUUUuUU" +
-                        "PpPpPPpPpPPppPppppPp" +
-                        "AAaAAAaaaAAaaaaAAA" +
-                        "SSsSSSSSSSSSSSSSS" +
-                        "RrRrrRR" +
-                        "EEEEE" +
-                        "Mmmm" +
-                        "11";
+                "OooooooooooooooOoooOOoOOOO" +
+                "UuuuUUUuUUUUuUUUUUUuUU" +
+                "PpPpPPpPpPPppPppppPp" +
+                "AAaAAAaaaAAaaaaAAA" +
+                "SSsSSSSSSSSSSSSSS" +
+                "RrRrrRR" +
+                "EEEEE" +
+                "Mmmm" +
+                "11";
         Assertions.assertEquals(2, Problem952.run(frase.toCharArray()));
     }
 

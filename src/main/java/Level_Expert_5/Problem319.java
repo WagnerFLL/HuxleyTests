@@ -7,7 +7,7 @@ public class Problem319 {
         assert n > 0 && null != intervals && intervals.length > 0;
 
         int elo = n - 1, k;
-        int[] aux = new int[]{0,0};
+        int[] aux = new int[]{0, 0};
 
         while (elo > 0) {
             if (intervals[elo][0] < intervals[elo][1]) {

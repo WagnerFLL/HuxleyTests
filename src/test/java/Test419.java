@@ -24,15 +24,15 @@ public class Test419 {
     void errorTest() {
 
         assertAll(
-                () -> assertThrows(java.lang.AssertionError.class, ()-> Problem419.run(-1),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Problem419.run(-1),
                         "Erro com número negativo aceito."),
-                () -> assertThrows(java.lang.AssertionError.class, ()-> Problem419.run(0),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Problem419.run(0),
                         "0 aceito incorretamente!"),
-                () -> assertThrows(java.lang.AssertionError.class, ()-> Problem419.run(16),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Problem419.run(16),
                         "Erro com número maior que o esperado."),
-                () -> assertThrows(java.lang.AssertionError.class, ()-> Problem419.run(-1452),
+                () -> assertThrows(java.lang.AssertionError.class, () -> Problem419.run(-1452),
                         "Erro com número negativo aceito."),
-                () -> assertThrows(java.lang.NumberFormatException.class, ()-> Problem419.run(Integer.parseInt(null)),
+                () -> assertThrows(java.lang.NumberFormatException.class, () -> Problem419.run(Integer.parseInt(null)),
                         "Erro com número inválido.")
 
         );

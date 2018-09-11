@@ -5,7 +5,7 @@ public class Problem173 {
     public static int run(int tam1, int tam2, int[][] auditorio) {
 
         assert tam1 > 0 && tam1 < 200 && tam2 > 0 && tam2 < 200 && auditorio != null && auditorio.length > 0;
-        for (int[] a:auditorio) {
+        for (int[] a : auditorio) {
             assert a.length > 0;
         }
 

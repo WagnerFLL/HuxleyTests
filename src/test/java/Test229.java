@@ -190,7 +190,7 @@ public class Test229 {
                         "Erro não detectado!"),
                 () -> assertThrows(java.lang.AssertionError.class, () -> Problem229.run(1, 1, 1, 1, null),
                         "Erro não detectado!")
-                );
+        );
     }
 
 }
